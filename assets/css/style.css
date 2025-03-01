@@ -116,7 +116,7 @@ h1 {
    ========================================================================== */
 .conteneur {
     text-align: center;
-    background-color: var(--color-jaune);
+    background-color: ghostwhite;
 }
 @media(min-width: 600px){
     .conteneur {
@@ -188,13 +188,13 @@ h1 {
     display:flex;
     flex-wrap:wrap;
 }
-.conteneur__sectionGauche:first-child  {
+.conteneur__sectionGauche div:first-child  {
     padding: 1rem;
     background-color: var(--color-jaune);
     grid-area: createSchedule;
 }
-.conteneur__sectionGauche:nth-child(2) {
+.conteneur__sectionGauche div:nth-child(2) {
     padding: 1rem;
-    background-color: var(--color-jaune-fonce);
+    background-color: var(--color-secondary);
     grid-area: aiContent;
 }
