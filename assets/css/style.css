@@ -30,6 +30,12 @@
     --color-primary: #7551db;
     --color-secondary: #fecc6a;
     --color-tertiary: rgb(221, 209, 252); 
+    --color-mauve: hsl(254, 88%, 90%);
+    --color-mauve-fonce: hsl(256, 67%, 59%);
+    --color-jaune: hsl(31, 66%,93%);
+    --color-jaune-fonce: hsl(39, 100%, 71%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-black: hsl(0, 0%, 0%);
 }
 
 
@@ -91,7 +97,7 @@ h4{
 /* AJUSTER LES VALEURS SELON VOTRE PROJET */
 h1 {
     /* = 24px */
-    font-size: 2.4rem;
+    font-size: 3.5rem;
 }
 @media (min-width: 600px) {
     h1 {
@@ -108,3 +114,77 @@ h1 {
 
 /* Grille de mise en page
    ========================================================================== */
+.conteneur {
+    text-align: center;
+    background-color: var(--color-jaune);
+}
+@media(min-width: 600px){
+    .conteneur {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            
+            
+            .fiveStars { grid-area: 1 / 2 / 3 / 4; }
+            .multipleAccounts { grid-area: 2 / 2 / 4 / 3; }
+            .scheduleContent { grid-area: 2 / 3 / 4 / 4; }
+            .scheduleSocialMedia { grid-area: 1 / 4 / 3 / 5; }
+            .growFollowers { grid-area: 4 / 3 / 5 / 5; }
+            .fasterAudience { grid-area: 4 / 2 / 5 / 3; }
+            .createSchedule { grid-area: 1 / 1 / 3 / 2; }
+            .aiContent { grid-area: 2 / 1 / 5 / 2; }
+
+    }
+}
+/* conteneur div */
+.conteneur div {
+    border-radius: 1rem;
+    margin: 1rem 2rem;
+    background-color: var(--color-secondary);
+    /* min-height: 40rem; */
+    /* max-height: 40rem; */
+    /* overflow: hidden; */
+}
+/* conteneur 1 */
+.conteneur div:first-child {
+    padding: 1rem;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+.fiveStars h1 {
+    padding: 0rem 5.5rem;
+}
+/* conteneur 2 */
+.conteneur div:nth-child(2) {
+    background-color: var(--color-white);
+    padding: 1rem;
+}
+/*conteneur 3 */
+.conteneur div:nth-child(3) {
+    padding: 1rem;
+    background-color: var(--color-secondary);
+}
+/*conteneur 4 */
+.conteneur div:nth-child(4) {
+    padding: 1rem;
+}
+/*conteneur 5 */
+.conteneur div:nth-child(5) {
+    padding: 1rem;
+    background-color: var(--color-mauve-fonce);
+}
+/*conteneur 6 */
+.conteneur div:nth-child(6) {
+    padding: 1rem;
+    background-color: var(--color-white);
+}
+.conteneur div:nth-child(7) {
+    padding: 1rem;
+    background-color: var(--color-jaune);
+}
+.conteneur div:last-child {
+    padding: 1rem;
+    background-color: var(--color-jaune-fonce);
+}
