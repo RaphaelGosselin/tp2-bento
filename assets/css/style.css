@@ -203,6 +203,7 @@ p {
 .multipleAccounts {
     display:flex;
     flex-wrap: wrap;
+    flex-shrink: 0;
     background-color: var(--color-white);
     padding: 3rem;
     grid-area: multipleAccounts;
@@ -213,9 +214,10 @@ p {
     }
     .multipleAccounts img{
         position: relative;
-       left: 6rem;
        border-radius: 5rem;
-       height: 10rem;
+       max-width: 140%;
+       
+       max-height: 30%;
     }
 }
 
