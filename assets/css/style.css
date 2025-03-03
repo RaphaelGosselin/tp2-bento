@@ -143,6 +143,8 @@ p {
 .conteneur {
     text-align: left;
     background-color: ghostwhite;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 @media(min-width: 600px){
     .conteneur {
@@ -202,9 +204,8 @@ p {
     display:flex;
     flex-wrap: wrap;
     background-color: var(--color-white);
-    padding: 1rem;
+    padding: 3rem;
     grid-area: multipleAccounts;
-    max-height: 25rem;
 }
 @media(min-width: 600px){
     .multipleAccounts h2{
@@ -214,15 +215,15 @@ p {
         position: relative;
        left: 6rem;
        border-radius: 5rem;
+       height: 10rem;
     }
 }
 
 /*conteneur 3 */
 .scheduleContent {
-    padding: 1rem;
+    padding: 3rem;
     background-color: var(--color-secondary);
     grid-area: scheduleContent;
-    max-height: 25rem;
 }
 .scheduleContent img{
     width: 70%;
@@ -233,7 +234,12 @@ p {
         flex-wrap: wrap;
     }
     .scheduleContent img{
+        position: relative;
         width: 100%;
+        top: 30%;
+    }
+    .scheduleContent h2{
+        flex: 1 1 80%
     }
 }
 /*conteneur 4 */
@@ -255,7 +261,13 @@ p {
         min-width: 20rem;
         float: right;
     }
-
+    .scheduleSocialMedia h2{
+        margin: 0;
+        flex: 1 1 80%;
+    }
+    .scheduleSocialMedia p{
+        margin: 1rem 0 0 0;
+    }
 }
 @media(min-width: 900px){
     .scheduleSocialMedia img {
