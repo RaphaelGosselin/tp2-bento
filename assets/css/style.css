@@ -75,13 +75,13 @@ body {
 
 @media (min-width: 600px) {
     body {
-        line-height: 1.5;
+        line-height: 1;
         font-size: 1.6rem;
     }
 }
 @media (min-width: 800px) {
     body {
-        line-height: 1.75;
+        line-height: 1.2;
         font-size: 1.6rem;
     }
 }
@@ -97,25 +97,51 @@ h4{
 /* AJUSTER LES VALEURS SELON VOTRE PROJET */
 h1 {
     /* = 24px */
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 @media (min-width: 600px) {
     h1 {
         /* = 32px */
-        font-size: 3.2rem;
+        font-size: 4.5rem;
+    }
+}
+@media (min-width: 1000px) {
+    h1 {
+        /* = 36px */
+        font-size: 6rem;
+    }
+}
+h2 {
+    /* = 20px */
+    font-size: 2rem;
+}
+@media (min-width: 600px) {
+    h2 {
+        /* = 24px */
+        font-size: 2.8rem;
     }
 }
 @media (min-width: 800px) {
-    h1 {
-        /* = 36px */
-        font-size: 3.6rem;
+    h2 {
+        /* = 28px */
+        font-size: 3rem;
+    }
+}
+p {
+    /* = 16px */
+    font-size: 1.6rem;
+}
+@media (min-width: 600px) {
+    p {
+        /* = 18px */
+        font-size: 1.8rem;
     }
 }
 
 /* Grille de mise en page
    ========================================================================== */
 .conteneur {
-    text-align: center;
+    text-align: left;
     background-color: ghostwhite;
 }
 @media(min-width: 600px){
@@ -134,67 +160,196 @@ h1 {
     }
 }
 /* conteneur div */
-.conteneur div {
+.conteneur__li {
     border-radius: 1rem;
-    margin: 1rem 2rem;
+    margin: 1rem 1rem;
     background-color: var(--color-secondary);
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 /* conteneur 1 */
-.conteneur div:first-child {
+.fiveStars {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 30rem;
     padding: 1rem;
     color: var(--color-white);
     background-color: var(--color-primary);
     grid-area: fiveStars;
 }
-.fiveStars h1 {
-    padding: 0rem 5.5rem;
+.fiveStars img{ 
+    width: 18rem;
+    height: auto;
+}
+@media(min-width: 400px){
+    .fiveStars h1 {
+        padding: 0rem 5.5rem;
+    }
+    .fiveStars img{
+        width: 18rem;
+    }
+    .fiveStars p {
+        width: 100%;
+    }
+}
+.fiveStars__span{
+    color: var(--color-secondary);
 }
 /* conteneur 2 */
-.conteneur div:nth-child(2) {
+.multipleAccounts {
+    display:flex;
+    flex-wrap: wrap;
     background-color: var(--color-white);
     padding: 1rem;
     grid-area: multipleAccounts;
+    max-height: 25rem;
 }
+@media(min-width: 600px){
+    .multipleAccounts h2{
+        font-size: 2.5rem;
+    }
+    .multipleAccounts img{
+        position: relative;
+       left: 6rem;
+       border-radius: 5rem;
+    }
+}
+
 /*conteneur 3 */
-.conteneur div:nth-child(3) {
+.scheduleContent {
     padding: 1rem;
     background-color: var(--color-secondary);
     grid-area: scheduleContent;
+    max-height: 25rem;
+}
+.scheduleContent img{
+    width: 70%;
+}
+@media(min-width: 600px){
+    .scheduleContent{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .scheduleContent img{
+        width: 100%;
+    }
 }
 /*conteneur 4 */
-.conteneur div:nth-child(4) {
-    padding: 1rem;
+.scheduleSocialMedia {
+    padding: 1rem 3rem;
+    text-align: center;
     grid-area: scheduleSocialMedia;
+    background-color: var(--color-mauve);
+}
+@media(min-width: 600px){
+    .scheduleSocialMedia{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    .scheduleSocialMedia img {
+        position: relative;
+        min-height: 30%;
+        min-width: 20rem;
+        float: right;
+    }
+
+}
+@media(min-width: 900px){
+    .scheduleSocialMedia img {
+        min-width: 30rem;
+ 
+    }
 }
 /*conteneur 5 */
-.conteneur div:nth-child(5) {
+.growFollowers {
     display:flex;
-    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 5rem;
     background-color: var(--color-mauve-fonce);
+    color: var(--color-white);
     grid-area: growFollowers;
 }
 .growFollowers img{
-    width:50%;
+    width:100%;
+}
+@media(min-width: 600px){
+    .growFollowers {
+        flex-wrap: nowrap;
+        text-align: left;
+    }
+    .growFollowers img{
+        width:50%;
+        max-width: 30rem;
+    }
+    .growFollowers h2{
+        align-self: center;
+    }
 }
 /*conteneur 6 */
-.conteneur div:nth-child(6) {
+.fasterAudience {
     padding: 1rem;
     background-color: var(--color-white);
     grid-area: fasterAudience;
 }
+.fasterAudience__span{
+    font-size: 5rem;
+}
+/*conteneur de gauche */
 .conteneur__sectionGauche {
     grid-area: sectionGauche;
     display:flex;
     flex-wrap:wrap;
 }
-.conteneur__sectionGauche div:first-child  {
-    padding: 1rem;
+/*bonteneur 7*/
+.createSchedule  {
+    padding: 3rem 1rem;
+    min-height: 45%;
     background-color: var(--color-jaune);
+    color: var(--color-black);
     grid-area: createSchedule;
 }
-.conteneur__sectionGauche div:nth-child(2) {
+.createSchedule__span{
+    color: var(--color-primary);
+}
+.createSchedule img{
+    width: 70%;
+}
+@media(min-width: 600px){
+    .createSchedule {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: first baseline;
+        padding: 10rem 2.5rem;
+    }
+    .createSchedule img{
+        width: 100%;
+    }
+    .createSchedule h2{
+        font-size: 3rem;
+    }
+}
+/*conteneur 8*/
+.aiContent {
+    min-height: 45%;
     padding: 1rem;
     background-color: var(--color-secondary);
     grid-area: aiContent;
+}
+.aiContent img{
+    width: 70%;
+}
+@media(min-width: 600px){
+    .aiContent h2{
+        font-size: 4rem;
+    }
+    .aiContent img{
+        width: 100%;
+    }
 }
