@@ -30,20 +30,7 @@ Les utilisateurs doivent être capables de :
 
 ### Capture d'écran
 
-![](./screenshot.jpg)
-
-Ajoutez une capture d'écran de votre solution. La manière la plus simple de le faire est d'utiliser Firefox pour afficher votre projet, de faire un clic droit sur la page et de sélectionner "Prendre une capture d'écran". Vous pouvez choisir soit une capture d'écran pleine hauteur, soit une version recadrée en fonction de la longueur de la page. Si la page est très longue, il peut être préférable de la recadrer.
-
-Alternativement, vous pouvez utiliser un outil comme [FireShot](https://getfireshot.com/) pour prendre la capture d'écran. FireShot propose une option gratuite, vous n'avez donc pas besoin de l'acheter.
-
-Ensuite, recadrez/optimisez/modifiez votre image comme bon vous semble, ajoutez-la à votre projet et mettez à jour le chemin du fichier dans l'image ci-dessus.
-
-**Remarque : Supprimez cette note et les paragraphes ci-dessus lorsque vous ajoutez votre capture d'écran. Si vous préférez ne pas ajouter de capture d'écran, n'hésitez pas à supprimer cette section entière.**
-
-### Liens
-
-- URL de la solution : [Ajoutez l'URL de la solution ici](https://your-solution-url.com)
-- URL du site en direct : [Ajoutez l'URL du site en direct ici](https://your-live-site-url.com)
+![](final.jpg)
 
 ## Mon processus
 
@@ -64,18 +51,35 @@ Utilisez cette section pour résumer certains de vos principaux apprentissages l
 Voici un exemple de la manière dont vous pouvez ajouter des extraits de code :
 
 ```html
-<h1>Un code HTML dont je suis fier</h1>
+<section class="conteneur__sectionGauche">
+<!--7-->
+<div class="conteneur__li createSchedule">
+  <h2>Create and schedule content <span class="createSchedule__span"><i>quicker</i></span>.</h2>
+  <img src="assets/images/illustration-create-post.webp" alt="Quick schedule">
+</div>
+<!--8-->
+<div class="conteneur__li aiContent">
+  <h2>Write your content using AI.</h2>
+  <img src="assets/images/illustration-ai-content.webp" alt="AI content">
+</div>
+</section>
 ```
 
 ```css
-.fier-de-ce-css {
-  color: papayawhip;
-}
-```
+@media(min-width: 600px){
+    .conteneur {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-template-rows: repeat(3, 1fr); */
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
 
-```js
-const fierDeCetteFonction = () => {
-  console.log('🎉')
+            grid-template-areas: 
+            "sectionGauche fiveStars fiveStars scheduleSocialMedia"
+            "sectionGauche multipleAccounts scheduleContent scheduleSocialMedia"
+            "sectionGauche fasterAudience growFollowers growFollowers"
+        
+    }
 }
 ```
 
@@ -91,15 +95,15 @@ Utilisez cette section pour préciser les domaines sur lesquels vous souhaitez c
 
 ### Ressources utiles
 
-- [Exemple de ressource 1](https://www.example.com) - Cela m'a aidé pour XYZ. J'ai vraiment aimé ce modèle et je vais l'utiliser à l'avenir.
-- [Exemple de ressource 2](https://www.example.com) - C'est un excellent article qui m'a aidé à comprendre XYZ. Je le recommanderais à toute personne qui apprend encore ce concept.
+- [MDN](https://developer.mozilla.org/fr/) - Cela m'a aidé pour XYZ. J'ai vraiment aimé ce modèle et je vais l'utiliser à l'avenir.
+- [W3S](https://www.w3schools.com/) - C'est un excellent article qui m'a aidé à comprendre XYZ. Je le recommanderais à toute personne qui apprend encore ce concept.
 
 **Remarque : Supprimez cette note et remplacez la liste ci-dessus par des ressources qui vous ont aidé pendant le défi. Elles pourraient être utiles pour toute personne qui consulte votre solution ou pour vous-même lorsque vous reviendrez sur ce projet dans le futur.**
 
 ## Auteur
 
-- Site Web - [Ajoutez votre nom ici](https://www.your-site.com)
-- Frontend Mentor - [@votrepseudo](https://www.frontendmentor.io/profile/votrepseudo) 
+- Site Web - [Raphael Gosselin](https://www.your-site.com)
+- Frontend Mentor - [@2134391@csfoy.ca](https://www.frontendmentor.io/profile/votrepseudo) 
 
 **Remarque : Supprimez cette note et ajoutez/supprimez/modifiez les lignes ci-dessus en fonction des liens que vous souhaitez partager.**
 
